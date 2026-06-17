@@ -175,7 +175,6 @@ export default function DiceWidget() {
                   backfaceVisibility: "hidden",
                   backgroundColor: "#1e2d52",
                   borderRadius: 6,
-                  boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.13)",
                 }}
               >
                 {/* Dots */}
