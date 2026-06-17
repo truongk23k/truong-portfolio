@@ -9,7 +9,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    // Strip BOM (U+FEFF = 65279) that Windows PowerShell injects into env vars
+    const rawKey = process.env.RESEND_API_KEY ?? "";
+    const apiKey = rawKey.charCodeAt(0) === 65279 ? rawKey.slice(1) : rawKey;
+    const resend = new Resend(apiKey);
 
     const { error } = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
@@ -22,7 +25,7 @@ export async function POST(req: Request) {
 
     if (error) {
       console.error("Resend error:", JSON.stringify(error));
-      return NextResponse.json({ error: error.message, detail: JSON.stringify(error) }, { status: 500 });
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
     return NextResponse.json({ ok: true });
