@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://truonglv.vercel.app"),
+  metadataBase: new URL("https://truong-portfolio.vercel.app"),
   title: "Truong LV — Playable Ads Developer",
   description:
     "Playable Ads Developer & Unity Developer based in Ha Noi, Vietnam. Building high-converting interactive ads for mobile games across AppLovin, Meta, TikTok, and more.",
