@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+      className="relative min-h-screen flex flex-col overflow-hidden pt-16"
     >
       {/* ── Deep game-studio background ── */}
       <div className="absolute inset-0 pointer-events-none">
@@ -27,7 +27,8 @@ export default function Hero() {
       <div className="absolute inset-0 hex-grid dark:opacity-60 opacity-30 pointer-events-none" />
 
       {/* ── Content ── */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
+      <div className="relative z-10 flex-1 flex items-center justify-center">
+      <div className="container mx-auto px-6 text-center">
         {/* Status badge */}
         <div
           className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-sm font-bold mb-10 animate-in tracking-wide"
@@ -116,14 +117,17 @@ export default function Hero() {
           ))}
         </div>
       </div>
+      </div>
 
-      {/* ── Scroll cue ── */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-400 dark:text-slate-500 animate-bounce">
-        <span className="text-[9px] uppercase tracking-[0.3em] font-bold">
-          Explore
-        </span>
-        <div className="w-5 h-8 rounded-full border border-slate-300 dark:border-slate-600 flex items-start justify-center p-1">
-          <div className="w-1 h-2 rounded-full bg-slate-400 dark:bg-slate-500 animate-bounce" />
+      {/* ── Scroll cue — outside content so it never overlaps on mobile ── */}
+      <div className="relative z-10 flex justify-center pb-8 pt-4">
+        <div className="flex flex-col items-center gap-2 text-slate-400 dark:text-slate-500 animate-bounce">
+          <span className="text-[9px] uppercase tracking-[0.3em] font-bold">
+            Explore
+          </span>
+          <div className="w-5 h-8 rounded-full border border-slate-300 dark:border-slate-600 flex items-start justify-center p-1">
+            <div className="w-1 h-2 rounded-full bg-slate-400 dark:bg-slate-500 animate-bounce" />
+          </div>
         </div>
       </div>
 
