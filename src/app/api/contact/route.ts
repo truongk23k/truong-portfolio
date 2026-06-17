@@ -17,12 +17,7 @@ export async function POST(req: Request) {
       replyTo: email,
       subject: `[Portfolio] ${subject}`,
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
-      html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <hr/>
-        <p>${message.replace(/\n/g, "<br/>")}</p>
-      `,
+      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><hr/><p>${message.replace(/\n/g, "<br/>")}</p>`,
     });
 
     if (error) {
