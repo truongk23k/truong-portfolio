@@ -47,11 +47,11 @@ export default function About() {
                       src="/avatar.jpg"
                       alt="Truong LV"
                       fill
-                      className="object-cover object-top"
+                      className="object-cover object-[center_20%]"
                       priority
                     />
-                    {/* Subtle gradient overlay at bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                    {/* Top overlay — soften busy event background */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/40" />
 
                     {/* HUD corners */}
                     <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-emerald-400/60" />
@@ -79,10 +79,6 @@ export default function About() {
                   </div>
                 </div>
 
-                {/* Ad network badge */}
-                <div className="absolute -top-4 -right-4 px-4 py-2 rounded-2xl bg-gradient-to-r from-blue-600 to-violet-600 text-white text-sm font-black shadow-lg shadow-blue-500/30 uppercase tracking-wide">
-                  Unity Certified
-                </div>
               </div>
             </div>
           </AnimatedSection>
