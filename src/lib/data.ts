@@ -15,16 +15,17 @@ export const personalInfo = {
 }
 
 export const stats = [
-  { value: "20+", label: "Games Turned into Playables" },
-  { value: "11", label: "Months at Sonat Game" },
-  { value: "7", label: "Ad Networks Supported" },
-  { value: "1M+", label: "Installs Driven" },
+  { value: "20+",   label: "Games Turned into Playables" },
+  { value: "100M+", label: "Ads Impression" },
+  { value: "300+",  label: "Ads Converted" },
+  { value: "1+",    label: "Year of Experience" },
 ]
 
 export const featuredPlayables = [
   {
     id: 1,
     gameName: "Solitaire Pop: Pair Match",
+    description: "Match pairs of cards before time runs out — a solitaire core loop squeezed into a 30-second hook that drives install intent across casual networks.",
     genre: "Casual",
     engine: "Luna Playable",
     gradient: "from-amber-500 via-orange-500 to-rose-500",
@@ -35,8 +36,8 @@ export const featuredPlayables = [
     thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/27/ff/1b27ffc2-35e6-ef6c-6650-26079cfb8fae/PairMatch_2048x2732_CPPBasic_PA2_thaonp180526_1.png/576x768bb.png",
     iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/fc/07/a1fc0701-2345-9ee6-5bd4-d4e88531c2d9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
     tasks: [
-      { name: "Summer", playUrl: "https://playground.lunalabs.io/preview/440480/598664/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd" },
-      { name: "BeachFish", playUrl: "https://playground.lunalabs.io/preview/440852/599252/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd" },
+      { name: "Summer",    playUrl: "/tasks/solitaire-pop-summer/PA1_Full_BGM_unityads.html",    thumbnailUrl: "/thumbnails/solitaire-pop-summer/thumb.png" },
+      { name: "BeachFish", playUrl: "/tasks/solitaire-pop-beachfish/PA1_Full_BGM_unityads.html", thumbnailUrl: "/thumbnails/solitaire-pop-beachfish/thumb.png" },
     ],
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.solitaire.pop.pair.match.puzzle",
     appStoreUrl: "https://apps.apple.com/us/app/solitaire-pop-pair-match/id6770403430",
@@ -44,6 +45,7 @@ export const featuredPlayables = [
   {
     id: 2,
     gameName: "Pop Sort: Color Ball Jam",
+    description: "Sort colorful balls into matching tubes. A satisfying one-tap mechanic that converts casual gamers at high IPM across Unity and Meta placements.",
     genre: "Casual",
     engine: "Luna Playable",
     gradient: "from-violet-500 via-pink-500 to-orange-400",
@@ -52,13 +54,14 @@ export const featuredPlayables = [
     icon: "🎱",
     hudColor: "from-violet-400 to-pink-400",
     iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/12/4f/c6124f1f-6757-516b-939f-c767be8ba850/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    thumbnailUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/12/4f/c6124f1f-6757-516b-939f-c767be8ba850/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
     tasks: [
-      { name: "Watermelon", playUrl: "https://playground.lunalabs.io/preview/438740/596191/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd" },
+      { name: "Watermelon", playUrl: "/tasks/pop-sort-watermelon/PA1_BGNomal_20s_BGM_unityads.html", thumbnailUrl: "/thumbnails/pop-sort-watermelon/thumb.png" },
     ],
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.popsort.colorball.jam",
     appStoreUrl: "https://apps.apple.com/us/app/pop-sort-color-ball-jam/id6762253738",
   },
-  // TODO: thêm game 3
+  // TODO: thêm task 3
 ]
 
 export const skills = [
@@ -121,6 +124,66 @@ export const experiences = [
     tags: ["Unity", "C#", "HTML5", "Playable Ads"],
     current: false,
   },
+]
+
+export const gameDevProjects = [
+  {
+    id: 1,
+    title: "TRUONG PANIC SURVIVAL",
+    status: "PUBLISHED: 2025",
+    description: "A top-down survival game where you fight endless waves of enemies. Fast-paced mechanics with roguelite progression.",
+    playUrl: "https://truongk23k.itch.io/truong-panic-survival",
+    backgroundUrl: "/gamedev/game1/bg.png",
+    artworkUrl: "/gamedev/game1/icon.png",
+  },
+]
+
+export const gamingAwards = [
+  {
+    id: 1,
+    imageUrl: "/awards/award1/thumb.png",
+    title: "Nominated — Viction Game Award",
+    description: "Included in Hall of Fame — Viction Game Award 2025",
+    checkoutUrl: "",
+  },
+  {
+    id: 2,
+    imageUrl: "/awards/award2/thumb.png",
+    title: "1ST Price SEEE JAM 2025",
+    description: "The official Game Jam from Game Developer CLUB of Hanoi University of Science and Technology",
+    checkoutUrl: "",
+  },
+]
+
+export const games = [
+  {
+    id: 1,
+    title: "Solitaire Pop — Summer",
+    parent: "Solitaire Pop: Pair Match",
+    genre: "Casual Puzzle",
+    iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/fc/07/a1fc0701-2345-9ee6-5bd4-d4e88531c2d9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    playUrl: "https://playground.lunalabs.io/preview/440480/598664/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd",
+    network: "AppLovin MAX",
+  },
+  {
+    id: 2,
+    title: "Solitaire Pop — BeachFish",
+    parent: "Solitaire Pop: Pair Match",
+    genre: "Casual Puzzle",
+    iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/fc/07/a1fc0701-2345-9ee6-5bd4-d4e88531c2d9/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    playUrl: "https://playground.lunalabs.io/preview/440852/599252/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd",
+    network: "Meta Ads",
+  },
+  {
+    id: 3,
+    title: "Pop Sort — Watermelon",
+    parent: "Pop Sort: Color Ball Jam",
+    genre: "Casual",
+    iconUrl: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/12/4f/c6124f1f-6757-516b-939f-c767be8ba850/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    playUrl: "https://playground.lunalabs.io/preview/438740/596191/1b926157a6e5d4f657db9f055ff85c40e944f3bf14e602e1e39b3628bf2b4bfd",
+    network: "Unity Ads",
+  },
+  // TODO: thêm các game tiếp theo vào đây
 ]
 
 export const contactInfo = [

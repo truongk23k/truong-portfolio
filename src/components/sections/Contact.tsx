@@ -5,12 +5,7 @@ import { contactInfo, personalInfo } from "@/lib/data";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-28 overflow-hidden">
-      {/* Background orbs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] rounded-full bg-blue-600/12 dark:bg-blue-600/8 blur-[100px]" />
-        <div className="absolute top-0 right-1/4 w-[400px] h-[400px] rounded-full bg-purple-600/12 dark:bg-purple-600/8 blur-[100px]" />
-      </div>
+    <section id="contact" className="relative py-20 overflow-hidden">
 
       <div className="container mx-auto px-6">
         <AnimatedSection>

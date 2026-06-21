@@ -4,11 +4,7 @@ import { experiences } from "@/lib/data";
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-28 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-purple-600/8 dark:bg-purple-600/5 blur-[120px]" />
-      </div>
+    <section id="experience" className="relative py-20 overflow-hidden">
 
       <div className="container mx-auto px-6">
         <AnimatedSection>

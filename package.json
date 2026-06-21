@@ -16,12 +16,14 @@
     "resend": "^6.14.0"
   },
   "devDependencies": {
+    "@iconify-json/logos": "^1.2.11",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
+    "simple-icons": "^16.23.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

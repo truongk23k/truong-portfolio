@@ -5,12 +5,7 @@ import { skills } from "@/lib/data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28 overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-blue-600/10 dark:bg-blue-600/8 blur-[100px]" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-purple-600/10 dark:bg-purple-600/8 blur-[100px]" />
-      </div>
+    <section id="skills" className="relative py-20 overflow-hidden">
 
       <div className="container mx-auto px-6">
         <AnimatedSection>

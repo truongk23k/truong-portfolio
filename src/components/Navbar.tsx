@@ -5,7 +5,7 @@ import { useTheme } from "./ThemeProvider";
 
 const navLinks = [
   { label: "Playables", href: "#playables" },
-  { label: "About", href: "#about" },
+  { label: "Game Dev", href: "#games" },
   { label: "Skills", href: "#skills" },
   { label: "Career", href: "#experience" },
   { label: "Contact", href: "#contact" },
